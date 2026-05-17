@@ -1,6 +1,11 @@
 import sys
 import os
 import mlflow
+import mlflow.sklearn
+
+mlflow.set_tracking_uri("file:///C:/Users/KIIT/Desktop/ML Programs/Complete-Python-Bootcamp-main/Test/Network Security/mlruns")
+
+mlflow.set_experiment("NetworkSecurity")
 
 from networksecurity.exception.exception import NetworkSecurityException
 from networksecurity.logging.logger import logging
@@ -30,16 +35,18 @@ class ModelTrainer:
             raise NetworkSecurityException(e,sys)
 
     def track_mlflow(self,best_model,classifaction_metric:ClassificationMetricArtifact):
+        
         with mlflow.start_run():
             f1_score=classifaction_metric.f1_score
             precision_score=classifaction_metric.precision_score
             recall_score=classifaction_metric.recall_score
 
+
             mlflow.log_metric("f1_score",f1_score)
             mlflow.log_metric("recall_score",recall_score)
             mlflow.log_metric("precision_score",precision_score)
 
-            mlflow.sklearn.log_model(best_model,"model")
+            mlflow.sklearn.log_model(best_model,name="model")
     
     def train_model(self,x_train,x_test,y_train,y_test):
         models={
@@ -62,6 +69,7 @@ class ModelTrainer:
                 # 'max_features':['sqrt','log2',None],
                 'n_estimators': [8,16,32,128,256]
             },
+            
             "Gradient Boosting":{
                 # 'loss':['log_loss', 'exponential'],
                 'learning_rate':[.1,.01,.05,.001],

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/KIIT/Desktop/ML Programs/Complete-Python-Bootcamp-main/Test/Network
+  Security/mlruns/545213868601112864/cd92cba234d74f11b0b44072bd949452/artifacts
+end_time: 1779050643762
+entry_point_name: ''
+experiment_id: '545213868601112864'
+lifecycle_stage: active
+run_id: cd92cba234d74f11b0b44072bd949452
+run_name: bald-chimp-129
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1779050621896
+status: 3
+tags: []
+user_id: KIIT

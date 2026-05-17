@@ -1,0 +1,11 @@
+artifact_location: file:///C:/Users/KIIT/Desktop/ML Programs/Complete-Python-Bootcamp-main/Test/Network
+  Security/mlruns/545213868601112864/models/m-87ff3f61efe8413aa6500f255e056417/artifacts
+creation_timestamp: 1779050622283
+experiment_id: '545213868601112864'
+last_updated_timestamp: 1779050643725
+model_id: m-87ff3f61efe8413aa6500f255e056417
+model_type: null
+name: model
+source_run_id: cd92cba234d74f11b0b44072bd949452
+status: 2
+status_message: null
