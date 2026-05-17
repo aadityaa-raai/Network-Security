@@ -1,0 +1,18 @@
+[ 2026-05-17 23:04:36,294 ] 19 root - INFO - Initiate Data Ingestion
+[ 2026-05-17 23:04:40,618 ] 63 root - INFO - Train Test Split Completed on the Dataframe
+[ 2026-05-17 23:04:40,621 ] 72 root - INFO - Exporting Train and Test File Path
+[ 2026-05-17 23:04:40,799 ] 82 root - INFO - Exported train and test file path
+[ 2026-05-17 23:04:40,800 ] 21 root - INFO - Data Ingestion completed
+[ 2026-05-17 23:04:40,816 ] 28 root - INFO - Initiate Data Validation
+[ 2026-05-17 23:04:40,980 ] 36 root - INFO - Required no of cols= 2
+[ 2026-05-17 23:04:40,981 ] 37 root - INFO - Dataframe has: 31
+[ 2026-05-17 23:04:40,982 ] 89 root - INFO - Train df doesnt contain all columns
+[ 2026-05-17 23:04:41,192 ] 30 root - INFO - Data Validation Completed
+[ 2026-05-17 23:04:41,192 ] 37 root - INFO - Intitate Data Transformation
+[ 2026-05-17 23:04:41,192 ] 55 root - INFO - Entered initiate data transformation of DataTransformation class
+[ 2026-05-17 23:04:41,192 ] 57 root - INFO - Starting data_transformation
+[ 2026-05-17 23:04:41,254 ] 39 root - INFO - Entered get_data_transformation_object in DataTransformation class
+[ 2026-05-17 23:04:41,254 ] 43 root - INFO - Initialised KNN Imputer with params: {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2026-05-17 23:04:41,275 ] 43 root - INFO - Entered save object of Main Utils class
+[ 2026-05-17 23:04:41,280 ] 47 root - INFO - Exited the save_object method of main utils class
+[ 2026-05-17 23:04:41,281 ] 39 root - INFO - Data Transformation Completed
