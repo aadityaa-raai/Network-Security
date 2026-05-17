@@ -107,8 +107,8 @@ class ModelTrainer:
 
             x_train,x_test,y_train,y_test=(
                 train_arr[:,:-1],
-                train_arr[:,-1],
                 test_arr[:,:-1],
+                train_arr[:,-1],
                 test_arr[:,-1]
             )
 
