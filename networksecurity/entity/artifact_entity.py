@@ -31,3 +31,5 @@ class ModelTrainerArtifact:
     trained_model_file_path: str
     train_metric_artifact: ClassificationMetricArtifact
     test_metric_artifact: ClassificationMetricArtifact
+    best_model_name: str
+    best_model_params: dict
